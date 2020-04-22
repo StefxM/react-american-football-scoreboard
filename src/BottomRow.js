@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 
-const BottomRow = () => {
+const BottomRow = (props) => {
+  console.log(props.user);
   return (
     <div className="bottomRow">
       <div className="down">
