@@ -1,7 +1,7 @@
 //TODO: STEP 1 - Import the useState hook.
 import React, { useState } from "react";
 import "./App.css";
-import BottomRow from "./BottomRow";
+//import BottomRow from "./BottomRow";
 
 
 
@@ -10,6 +10,8 @@ function App() {
  
   const [home, setHome] = useState(0);
   const [away, setAway] = useState(0);
+  const [build, setBuild] = useState(0);
+  
   
   return (
     <div className="container">
@@ -33,13 +35,13 @@ function App() {
       <section className="buttons">
         <div className="homeButtons">
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
-          <button className="homeButtons__touchdown" onClick={() => { setHome(home + 7) }}>Home Touchdown</button>
-          <button className="homeButtons__fieldGoal" onClick={() => { setHome(home + 3) }}>Home Field Goal</button>
+          <button className="homeButtons__touchdown" onClick={() => { setHome(home + 7), setBuild(build + 1) }}>Shootstyle</button>
+          <button className="homeButtons__fieldGoal" onClick={() => { setHome(home + 3), setBuild(build + 1) }}> UpperCut</button>
         </div>
 
         <div className="awayButtons">
-          <button className="awayButtons__touchdown" onClick={() => { setAway(away + 7) }}>Away Touchdown</button>
-          <button className="awayButtons__fieldGoal" onClick={() => { setAway(away + 3) }}>Away Field Goal</button>
+          <button className="awayButtons__touchdown" onClick={() => { setAway(away + 7), setBuild(build + 1) }}> Explode </button>
+          <button className="awayButtons__fieldGoal" onClick={() => { setAway(away + 3), setBuild(build + 1) }}> Grenade </button>
         </div>
       </section>
     </div>
