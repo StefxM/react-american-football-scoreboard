@@ -6,8 +6,8 @@
 .scoreboard {
   width: 58%;
   margin: 10rem auto;
-  background-color: #0b5402;
-  color: white;
+  background-color: #1ec9cf;
+  color: rgb(41, 38, 38);
   border-radius: 0.5rem;
   margin-top: 10rem;
   padding: 5rem;
@@ -34,11 +34,11 @@
 }
 
 .home {
-  background-color: #656565;
+  background-color: #25e235;
 }
 
 .away {
-  background-color: #af750a;
+  background-color: #801edb;
 }
 
 .home__name,
@@ -118,5 +118,5 @@
 .awayButtons__touchdown,
 .awayButtons__fieldGoal {
   margin: 1rem;
-  border-radius: 4px;
+  border-radius: 8px dotted;
 }
